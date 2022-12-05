@@ -1,0 +1,27 @@
+.Feed--Section {
+    flex:0.4 ; 
+    border: 1px solid var(--twitter-color);
+    min-width: fit-content; 
+    overflow-y: scroll; 
+}
+
+.feed--header {
+    position: sticky;
+    top: 0 ; 
+    background-color: white;  
+    z-index: 100; 
+    border: 1px solid var(--twtter-color);
+    padding: 15px 20px; 
+}
+
+/* this is for chrome user  */
+.Feed--Section::-webkit-scrollbar{
+    display: none;
+}
+
+/* this is for ie and firefox */
+
+.Feed--Section{
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
