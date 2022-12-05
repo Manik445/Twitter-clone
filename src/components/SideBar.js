@@ -9,6 +9,8 @@ import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import MessageIcon from '@mui/icons-material/Message';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import Person2Icon from '@mui/icons-material/Person2';
+import { Button } from '@mui/material';
+import './SideBar.css'
 
 
 function SideBar() {
@@ -23,10 +25,12 @@ function SideBar() {
       <SideBarOptions  Icon={MessageIcon} text="Messages"/>
       <SideBarOptions Icon={Person2Icon} text="Profile" /> 
       <SideBarOptions Icon={MoreHorizIcon} text="More" />
-
-
+     
+      {/* tweet--button */}
+      <Button variant="outlined" className="Tweet" fullWidth>Tweet</Button>
+    
       </div>   
   )           
-}
+}     
 
-export default SideBar   
+export default SideBar    
